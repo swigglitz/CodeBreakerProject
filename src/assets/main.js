@@ -9,9 +9,8 @@ function guess() {
     }
     if(!validateInput(input.value)) {
         return;
-    } else {
-        attempt.value++;
-    }
+    } 
+    attempt.value++;
 }
 
 function setHiddenFields() {
