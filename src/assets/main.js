@@ -13,11 +13,12 @@ function guess() {
 }
 
 function setHiddenFields() {
-    answer = Math.floor(Math.random() * 10000 ).toString();
+    answer.value = Math.floor(Math.random() * 10000 ).toString();
     while(answer.value.length < 4){
         answer.value = '0' + answer.value;
     }
-    attempt = 0; 
+    attempt = 0;
+    console.log(answer.value);
 }
 
 function setMessage(message) {
