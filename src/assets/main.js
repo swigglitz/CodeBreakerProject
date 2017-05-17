@@ -47,4 +47,9 @@ function getResults(input) {
     }
     html += "</div></div>";
     document.getElementById("results").innerHTML += html;
+
+    if(input == answer.value) {
+        return true;
+    }
+    return false;
 }
