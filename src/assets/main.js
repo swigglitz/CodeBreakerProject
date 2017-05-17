@@ -14,8 +14,8 @@ function guess() {
 
 function setHiddenFields() {
     answer = Math.floor(Math.random() * 10000 ).toString();
-    while(answer.length < 4){
-        answer = '0' + answer.value;
+    while(answer.value.length < 4){
+        answer.value = '0' + answer.value;
     }
     attempt = 0; 
 }
@@ -35,5 +35,5 @@ function validateInput(input){
 
 function getResults(guess) {
     let originalGuess = guess;
-    document.getElementById('results').innerHTML("<div class='row'>");
+    document.getElementById('results').innerHTML = "<div class='row'><span class='col-md-6>'" + guess + "</span><div class='col-md-6>'";
 }
